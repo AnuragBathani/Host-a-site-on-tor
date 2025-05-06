@@ -86,7 +86,7 @@ in torrc file add the below lines
 	HiddenServiceDir /var/lib/tor/hidden_service/
 	HiddenServicePort 80 127.0.0.1:80
 
-![[Pasted image 20250505145627.png]]
+![](https://github.com/AnuragBathani/Host-a-site-on-tor/blob/main/Pasted%20image%2020250505145627.png)
 
 now restart the tor using this command
 
@@ -97,12 +97,12 @@ to get the .onion address you have have to obtain from this path
 
 	sudo cat /var/lib/tor/my_custom_hidden_service/hostname
 
-![[Pasted image 20250505153801.png]]
+![](https://github.com/AnuragBathani/Host-a-site-on-tor/blob/main/Pasted%20image%2020250505153801.png)
 
 
 now put this on a tor borwser and it will look like this
 
-![[Pasted image 20250505154112.png]]
+![](https://github.com/AnuragBathani/Host-a-site-on-tor/blob/main/Pasted%20image%2020250505154112.png)
 
 now if you want to add a custom prefix in your address you need to find a address for that for that you can use a vanity v3 for find the address here below i mention a steps to find a your custom address and host on that address
 
@@ -114,7 +114,7 @@ go in this folder
 
 	cd mkp224o
 
-![[Pasted image 20250505154606.png]]
+![](https://github.com/AnuragBathani/Host-a-site-on-tor/blob/main/Pasted%20image%2020250505154606.png)
 
 first run the autogen.sh
 
@@ -136,12 +136,12 @@ in my case
 
 	./mk224 anurag
 
-![[Pasted image 20250505154930.png]]
+![](https://github.com/AnuragBathani/Host-a-site-on-tor/blob/main/Pasted%20image%2020250505154930.png)
 
 
 in this folder /mk224o you will find all the above as an folder 
 
-![[Pasted image 20250505155042.png]]
+![](https://github.com/AnuragBathani/Host-a-site-on-tor/blob/main/Pasted%20image%2020250505155042.png)
 
 this folder contain three things
 
@@ -149,7 +149,7 @@ this folder contain three things
 --> public key
 --> secret key
 
-![[Pasted image 20250505155231.png]]
+![](https://github.com/AnuragBathani/Host-a-site-on-tor/blob/main/Pasted%20image%2020250505155231.png)
 
 
 now go to the /var/lib/tor folder
@@ -160,7 +160,7 @@ make a directory called my_service
 
 	mkdir my_service
 
-![[Pasted image 20250505155513.png]]
+![](https://github.com/AnuragBathani/Host-a-site-on-tor/blob/main/Pasted%20image%2020250505155513.png)
 
 go inside that directory
 
@@ -171,7 +171,7 @@ copy the public and secret key from the where you find the address
 `cp ~/Downloads/tor_miner/mkp224o/abcgebba74a54fc7dpy3v52dgsak7hjsqzft2maq65diod4p26ctauyd.onion .
 
 
-![[Pasted image 20250505155718.png]]
+![](https://github.com/AnuragBathani/Host-a-site-on-tor/blob/main/Pasted%20image%2020250505155718.png)
 
 give the permissionas
 
@@ -182,7 +182,7 @@ give the permissionas
 
 change the path in /etc/tor/torrc 
 
-![[Pasted image 20250505160148.png]]
+![](https://github.com/AnuragBathani/Host-a-site-on-tor/blob/main/Pasted%20image%2020250505160148.png)
 
 now restart the nginx and tor
 
@@ -191,9 +191,9 @@ now restart the nginx and tor
 
 put a hostname in your browser
 
-![[Pasted image 20250505160737.png]]
+![](https://github.com/AnuragBathani/Host-a-site-on-tor/blob/main/Pasted%20image%2020250505160737.png)
 
-![[Pasted image 20250505160818.png]]
+![](https://github.com/AnuragBathani/Host-a-site-on-tor/blob/main/Pasted%20image%2020250505160818.png)
 
 
 for any  Troubleshooting you can verify if this below command works find then all good
