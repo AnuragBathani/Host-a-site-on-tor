@@ -37,7 +37,8 @@ option 2:
 		http://localhost or  http://localhost:80 or http://127.0.0.1:80
 
 
-![[https://github.com/AnuragBathani/Host-a-site-on-tor/blob/main/Pasted%20image%2020250505145627.png]]
+![My Image](https://github.com/AnuragBathani/Host-a-site-on-tor/blob/main/Pasted%20image%2020250505145627.png)
+
 
 
 you can see the home page of the website 
