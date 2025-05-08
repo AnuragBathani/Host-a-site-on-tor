@@ -147,7 +147,7 @@ CMD sh -c "python3 app.py & tor -f /etc/tor/torrc & tail -f /dev/null"
    ```
 
    This will output your `.onion` address, e.g., `abc123def456ghi7.onion`.
-   if you don't know how to generate .onion address read a **host a site on darknet  article**
+   if you don't know how to generate .onion address read a **host a site on tor  article** 
 
 2. **Open Tor Browser and navigate to your `.onion` address.**
 
